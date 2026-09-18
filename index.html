@@ -1,53 +1,53 @@
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh‑CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
   <title>在线工具集</title>
   <style>
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      box‑sizing: border‑box;
+      font‑family: system‑ui, ‑apple‑system, BlinkMacSystemFont, "Segoe UI", Roboto, sans‑serif;
     }
     body {
-      background-color: #f8fafc;
+      background‑color: #f8fafc;
       color: #1e293b;
-      min-height: 100vh;
+      min‑height: 100vh;
       display: flex;
     }
 
-    /* 左侧侧边导航 */
     .sidebar {
       width: 240px;
       background: #ffffff;
-      border-right: 1px solid #e2e8f0;
+      border‑right: 1px solid #e2e8f0;
       padding: 32px 20px;
       position: fixed;
       height: 100vh;
-      overflow-y: auto;
+      overflow‑y: auto;
     }
     .sidebar h2 {
-      font-size: 1.4rem;
+      font‑size: 1.4rem;
       color: #0f172a;
-      margin-bottom: 28px;
-      padding-bottom:12px;
-      border-bottom:1px solid #e2e8f0;
+      margin‑bottom: 28px;
+      padding‑bottom:12px;
+      border‑bottom:1px solid #e2e8f0;
     }
-    .nav-group-title {
-      font-size:0.85rem;
-      text-transform:uppercase;
-      letter-spacing:1px;
+    .nav‑group‑title {
+      font‑size:0.85rem;
+      text‑transform:uppercase;
+      letter‑spacing:1px;
       color:#94a3b8;
       margin:20px 0 10px;
     }
     .sidebar a {
       display:block;
       padding:12px 14px;
-      text-decoration:none;
+      text‑decoration:none;
       color:#475569;
-      border-radius:10px;
-      margin-bottom:6px;
+      border‑radius:10px;
+      margin‑bottom:6px;
       transition:0.2s;
     }
     .sidebar a:hover {
@@ -59,177 +59,179 @@
       color:#fff;
     }
 
-    /* 侧边广告位（可放广告代码） */
-    .sidebar-ad {
-      margin-top:30px;
+    .sidebar‑ad {
+      margin‑top:30px;
       padding:12px;
-      min-height:200px;
+      min‑height:200px;
       background:#f1f5f9;
-      border-radius:12px;
-      text-align:center;
+      border‑radius:12px;
+      text‑align:center;
       color:#64748b;
-      font-size:0.9rem;
+      font‑size:0.9rem;
     }
 
-    /* 主内容区域，留出侧边栏宽度 */
     .main {
-      margin-left:240px;
+      margin‑left:240px;
       flex:1;
       padding:40px 30px;
     }
     header {
-      margin-bottom:40px;
+      margin‑bottom:40px;
     }
     h1 {
-      font-size:2.4rem;
-      margin-bottom:12px;
+      font‑size:2.4rem;
+      margin‑bottom:12px;
       color:#0f172a;
     }
     .desc {
       color:#64748b;
-      font-size:1.05rem;
-      max-width:700px;
+      font‑size:1.05rem;
+      max‑width:700px;
     }
 
-    .tool-grid {
+    .tool‑grid {
       display:grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+      grid‑template‑columns: repeat(auto‑fill, minmax(260px,1fr));
       gap:24px;
     }
-    .tool-card {
+    .tool‑card {
       background:#ffffff;
-      border-radius:16px;
+      border‑radius:16px;
       padding:28px;
-      box-shadow:0 4px 20px rgba(0,0,0,0.06);
+      box‑shadow:0 4px 20px rgba(0,0,0,0.06);
       transition:all 0.25s ease;
       border:1px solid #e2e8f0;
     }
-    .tool-card:hover {
-      transform:translateY(-6px);
-      box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    .tool‑card:hover {
+      transform:translateY(‑6px);
+      box‑shadow:0 10px 30px rgba(0,0,0,0.1);
     }
-    .tool-card h3 {
-      font-size:1.3rem;
-      margin-bottom:10px;
+    .tool‑card h3 {
+      font‑size:1.3rem;
+      margin‑bottom:10px;
       color:#1e293b;
     }
-    .tool-card p {
+    .tool‑card p {
       color:#64748b;
-      font-size:0.95rem;
-      line-height:1.6;
-      margin-bottom:18px;
+      font‑size:0.95rem;
+      line‑height:1.6;
+      margin‑bottom:18px;
     }
-    .tool-card a {
-      display:inline-block;
-      text-decoration:none;
-      background-color:#2563eb;
+    .tool‑card a {
+      display:inline‑block;
+      text‑decoration:none;
+      background‑color:#2563eb;
       color:white;
       padding:10px 20px;
-      border-radius:8px;
-      font-weight:500;
+      border‑radius:8px;
+      font‑weight:500;
       transition:background 0.2s;
     }
-    .tool-card a:hover {
-      background-color:#1d4ed8;
+    .tool‑card a:hover {
+      background‑color:#1d4ed8;
     }
 
-    /* 底部广告位 */
-    .page-ad {
+    .page‑ad {
       margin:50px 0 30px;
-      min-height:120px;
+      min‑height:120px;
       background:#f1f5f9;
-      border-radius:14px;
+      border‑radius:14px;
       padding:20px;
-      text-align:center;
+      text‑align:center;
       color:#64748b;
     }
+
     footer {
-      margin-top:40px;
-      text-align:center;
+      margin‑top:40px;
+      padding‑top:20px;
+      border‑top: 1px solid #e2e8f0;
+      text‑align:center;
       color:#94a3b8;
-      font-size:0.9rem;
+      font‑size:0.9rem;
+    }
+    footer a {
+      color:#2563eb;
+      text‑decoration:none;
+      margin:0 6px;
+    }
+    footer a:hover {
+      text‑decoration:underline;
     }
 
-    /* 移动端适配：小屏幕侧边栏自动隐藏，改成顶部导航 */
-    @media (max-width: 768px) {
+    @media (max‑width: 768px) {
       body {
-        flex-direction:column;
+        flex‑direction:column;
       }
       .sidebar {
         position:static;
         width:100%;
         height:auto;
-        border-right:none;
-        border-bottom:1px solid #e2e8f0;
+        border‑right:none;
+        border‑bottom:1px solid #e2e8f0;
       }
       .main {
-        margin-left:0;
+        margin‑left:0;
         padding:24px 16px;
       }
     }
   </style>
 </head>
 <body>
-  <!-- 左侧侧边导航栏 -->
   <aside class="sidebar">
     <h2>工具分类</h2>
-    <div class="nav-group-title">文档工具</div>
-    <a href="/md-editor/index.html" class="active">Markdown编辑器</a>
+    <div class="nav‑group‑title">文档工具</div>
+    <a href="/md‑editor/" class="active">Markdown编辑器</a>
 
-    <div class="nav-group-title">文本工具</div>
+    <div class="nav‑group‑title">文本工具</div>
     <a href="#">文本格式化</a>
     <a href="#">JSON格式化</a>
 
-    <div class="nav-group-title">图片工具</div>
+    <div class="nav‑group‑title">图片工具</div>
     <a href="#">图片压缩</a>
     <a href="#">图片转格式</a>
 
-    <div class="nav-group-title">开发工具</div>
+    <div class="nav‑group‑title">开发工具</div>
     <a href="#">编码解码</a>
     <a href="#">时间戳转换</a>
 
-    <!-- 侧边栏广告位 -->
-    <div class="sidebar-ad">
+    <div class="sidebar‑ad">
       侧边广告位
-      <!-- 粘贴广告平台DIV和JS代码在这里 -->
     </div>
   </aside>
 
-  <!-- 主内容区域 -->
   <main class="main">
     <header>
       <h1>在线工具集</h1>
       <p class="desc">收集实用的网页小工具，全部在浏览器本地运行，简单方便。</p>
     </header>
 
-    <div class="tool-grid">
-      <div class="tool-card">
+    <div class="tool‑grid">
+      <div class="tool‑card">
         <h3>Markdown编辑器</h3>
         <p>在线Markdown编写、实时预览，支持导出HTML/PDF</p>
-        <a href="/md-editor/index.html">打开工具</a>
+        <a href="/md‑editor/">打开工具</a>
       </div>
-      <div class="tool-card">
+      <div class="tool‑card">
         <h3>JSON格式化</h3>
         <p>JSON代码一键格式化、校验、压缩</p>
         <a href="#">待开发</a>
       </div>
-      <div class="tool-card">
+      <div class="tool‑card">
         <h3>文本处理</h3>
         <p>大小写转换、去空格、文本对比</p>
         <a href="#">待开发</a>
       </div>
     </div>
 
-    <!-- 页面底部广告位 -->
-    <div class="page-ad">
+    <div class="page‑ad">
       底部通栏广告位
-      <!-- 粘贴广告平台DIV和JS代码在这里 -->
     </div>
 
     <footer>
       © 2026 在线工具集 | 静态网页工具
+      <br/>
+      <a href="/privacy.html">隐私政策 Privacy Policy</a>
     </footer>
   </main>
 </body>
 </html>
-<!-- （注：内容由AI生成） -->
