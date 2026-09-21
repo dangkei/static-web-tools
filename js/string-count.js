@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('string-count-run-btn').addEventListener('click', run);
     document.getElementById('string-count-sample-btn').addEventListener('click', () => {
-        input.value = 'JavaPub Tools, JavaPub JSON tools, javapub online tools';
+        input.value = 'Developers Tools, Developers JSON tools, javapub online tools';
         patternInput.value = 'javapub';
         ignoreCase.checked = true;
         output.value = '';

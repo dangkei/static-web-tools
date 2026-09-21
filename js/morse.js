@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('morse-encode-btn').addEventListener('click', () => run(encodeMorse, '摩斯密码编码完成。'));
     document.getElementById('morse-decode-btn').addEventListener('click', () => run(decodeMorse, '摩斯密码解码完成。'));
     document.getElementById('morse-sample-btn').addEventListener('click', () => {
-        input.value = 'JavaPub Tools 2026';
+        input.value = 'Developers Tools 2026';
         output.value = '';
         setMessage('已载入示例。', 'success');
     });

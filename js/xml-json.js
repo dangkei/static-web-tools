@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('xml-json-convert-btn').addEventListener('click', convert);
     document.getElementById('xml-json-sample-btn').addEventListener('click', () => {
-        input.value = '<tools version="1.0">\n  <item id="json">JSON格式化</item>\n  <item id="csv">JSON转CSV</item>\n  <owner>JavaPub</owner>\n</tools>';
+        input.value = '<tools version="1.0">\n  <item id="json">JSON格式化</item>\n  <item id="csv">JSON转CSV</item>\n  <owner>Developers</owner>\n</tools>';
         convert();
     });
     document.getElementById('xml-json-clear-btn').addEventListener('click', () => {

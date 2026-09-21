@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('json-to-query-btn').addEventListener('click', () => run(jsonToQuery, 'JSON 转 Query 完成。'));
     document.getElementById('query-to-json-btn').addEventListener('click', () => run(queryToJson, 'Query 转 JSON 完成。'));
     document.getElementById('query-sample-btn').addEventListener('click', () => {
-        input.value = JSON.stringify({ page: 1, tag: ['js', 'tools'], user: { name: 'JavaPub' } }, null, 2);
+        input.value = JSON.stringify({ page: 1, tag: ['js', 'tools'], user: { name: 'Developers' } }, null, 2);
         output.value = '';
         setMessage('已载入示例。', 'success');
     });

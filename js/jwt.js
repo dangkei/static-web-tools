@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const now = Math.floor(Date.now() / 1000);
         const payload = {
             sub: '10001',
-            name: 'JavaPub',
+            name: 'Developers',
             iss: 'api.chongplus.plus',
             iat: now,
             exp: now + 3600,

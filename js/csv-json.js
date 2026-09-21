@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
         delimiterInput.value = ',';
         headerInput.checked = true;
         trimInput.checked = true;
-        input.value = 'id,name,city,tags,remark\n1,JavaPub,北京,"json,csv","支持中文和逗号"\n2,Tools,上海,offline,"字段可用双引号包裹"';
+        input.value = 'id,name,city,tags,remark\n1,Developers,北京,"json,csv","支持中文和逗号"\n2,Tools,上海,offline,"字段可用双引号包裹"';
         convert();
     });
     document.getElementById('csv-json-clear-btn').addEventListener('click', () => {

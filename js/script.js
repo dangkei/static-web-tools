@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadSample() {
         const sample = {
             id: 1001,
-            name: 'JavaPub 在线工具箱',
+            name: 'Developers 在线工具箱',
             owner: {
                 name: '王仕宇',
                 github: 'Rodert'

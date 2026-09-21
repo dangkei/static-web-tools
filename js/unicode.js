@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         run(text => Array.from(text).map(char => `&#${char.codePointAt(0)};`).join(''), '已转换为 HTML 数字实体。');
     });
     document.getElementById('sample-unicode-btn').addEventListener('click', () => {
-        input.value = 'JavaPub 开发者工具箱 🚀';
+        input.value = 'Developers 开发者工具箱 🚀';
         output.value = '';
         setMessage('已载入示例。', 'success');
     });

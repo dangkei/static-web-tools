@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('url-parser-run-btn').addEventListener('click', parseUrl);
     document.getElementById('url-parser-sample-btn').addEventListener('click', () => {
-        input.value = 'https://user:pass@www.example.com:8443/api/list?page=1&tag=js&tag=tools&q=JavaPub%20Tools#readme';
+        input.value = 'https://user:pass@www.example.com:8443/api/list?page=1&tag=js&tag=tools&q=Developers%20Tools#readme';
         resetResults();
         setMessage('已载入示例。', 'success');
     });

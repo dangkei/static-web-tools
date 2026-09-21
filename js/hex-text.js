@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('text-to-hex-btn').addEventListener('click', () => run(textToHex, '文本转 Hex 完成。'));
     document.getElementById('hex-to-text-btn').addEventListener('click', () => run(hexToText, 'Hex 转文本完成。'));
     document.getElementById('hex-sample-btn').addEventListener('click', () => {
-        input.value = 'JavaPub Tools';
+        input.value = 'Developers Tools';
         output.value = '';
         setMessage('已载入示例。', 'success');
     });

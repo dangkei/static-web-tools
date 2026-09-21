@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('base32-encode-btn').addEventListener('click', () => run(encodeBase32, 'Base32 编码完成。'));
     document.getElementById('base32-decode-btn').addEventListener('click', () => run(decodeBase32, 'Base32 解码完成。'));
     document.getElementById('base32-sample-btn').addEventListener('click', () => {
-        input.value = 'JavaPub Tools';
+        input.value = 'Developers Tools';
         output.value = '';
         setMessage('已载入示例。', 'success');
     });

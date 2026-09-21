@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('yaml-json-convert-btn').addEventListener('click', convert);
     document.getElementById('yaml-json-sample-btn').addEventListener('click', () => {
-        input.value = 'name: JavaPub Tools\nversion: 1\nlocalOnly: true\nfeatures:\n  - JSON格式化\n  - YAML转JSON\nowner:\n  name: JavaPub\n  site: docs.chongplus.plus';
+        input.value = 'name: Developers Tools\nversion: 1\nlocalOnly: true\nfeatures:\n  - JSON格式化\n  - YAML转JSON\nowner:\n  name: Developers\n  site: docs.chongplus.plus';
         convert();
     });
     document.getElementById('yaml-json-clear-btn').addEventListener('click', () => {

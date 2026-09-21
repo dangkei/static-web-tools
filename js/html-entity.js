@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('html-unescape-btn').addEventListener('click', () => run(unescapeHtml, 'HTML 反转义完成。'));
     document.getElementById('html-numeric-btn').addEventListener('click', () => run(toNumericEntities, '数字实体转换完成。'));
     document.getElementById('sample-html-btn').addEventListener('click', () => {
-        input.value = '<div class="card">JavaPub & Tools</div>\n<script>alert("demo")</script>';
+        input.value = '<div class="card">Developers & Tools</div>\n<script>alert("demo")</script>';
         output.value = '';
         setMessage('已载入示例。', 'success');
     });

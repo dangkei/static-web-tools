@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('sample-word-btn').addEventListener('click', () => {
-        input.value = 'JavaPub 开发者在线工具箱\n\nJSON格式化、编码转换、文本处理、AI调试工具，打开即用，数据仅在浏览器本地处理。';
+        input.value = 'Developers 开发者在线工具箱\n\nJSON格式化、编码转换、文本处理、AI调试工具，打开即用，数据仅在浏览器本地处理。';
         count();
     });
     document.getElementById('clear-word-btn').addEventListener('click', () => {

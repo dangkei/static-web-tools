@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('url-full-encode-btn').addEventListener('click', () => run(fullEncode, '整段 URL 编码完成。'));
     document.getElementById('url-decode-btn').addEventListener('click', () => run(decodeUrl, 'URL 解码完成。'));
     document.getElementById('url-encode-sample-btn').addEventListener('click', () => {
-        input.value = 'JavaPub Tools 中文?q=1&tag=编码';
+        input.value = 'Developers Tools 中文?q=1&tag=编码';
         output.value = '';
         setMessage('已载入示例。', 'success');
     });

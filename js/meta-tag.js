@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('meta-generate-btn').addEventListener('click', generate);
     document.getElementById('meta-sample-btn').addEventListener('click', () => {
-        title.value = 'JavaPub Tools - 开发者在线工具箱';
+        title.value = 'Developers Tools - 开发者在线工具箱';
         url.value = 'https://rodert.github.io/jsonformat/';
         image.value = 'https://rodert.github.io/jsonformat/img/image.png';
         description.value = 'JSON格式化、编码加密、开发调试和文本处理工具，数据仅在浏览器本地处理。';

@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function loadSample() {
         patternInput.value = '\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b';
-        textInput.value = 'Contact JavaPub at dev@example.com or admin@javapub.net.\nInvalid email: hello@localhost';
+        textInput.value = 'Contact Developers at dev@example.com or admin@javapub.net.\nInvalid email: hello@localhost';
         replaceInput.value = '[email]';
         document.getElementById('flag-g').checked = true;
         document.getElementById('flag-i').checked = true;

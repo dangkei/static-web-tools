@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('dedupe-btn').addEventListener('click', dedupe);
     document.getElementById('sample-dedupe-btn').addEventListener('click', () => {
-        input.value = 'JavaPub\njson\nJSON\nbase64\n\njson\nAI\nJavaPub\napi.chongplus.plus';
+        input.value = 'Developers\njson\nJSON\nbase64\n\njson\nAI\nDevelopers\napi.chongplus.plus';
         dedupe();
     });
     document.getElementById('clear-dedupe-btn').addEventListener('click', () => {

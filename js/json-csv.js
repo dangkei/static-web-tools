@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('json-csv-convert-btn').addEventListener('click', convert);
     document.getElementById('json-csv-sample-btn').addEventListener('click', () => {
         input.value = JSON.stringify([
-            { id: 1, name: 'JavaPub', profile: { city: '北京', role: 'developer' }, tags: ['json', 'csv'] },
+            { id: 1, name: 'Developers', profile: { city: '北京', role: 'developer' }, tags: ['json', 'csv'] },
             { id: 2, name: 'Tools', profile: { city: '上海', role: 'toolbox' }, tags: ['offline'] }
         ], null, 2);
         convert();

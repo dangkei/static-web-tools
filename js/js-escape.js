@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('js-escape-btn').addEventListener('click', () => run(escapeJs, 'JavaScript 字符串转义完成。'));
     document.getElementById('js-unescape-btn').addEventListener('click', () => run(unescapeJs, 'JavaScript 字符串反转义完成。'));
     document.getElementById('js-escape-sample-btn').addEventListener('click', () => {
-        input.value = 'JavaPub "Tools"\n中文';
+        input.value = 'Developers "Tools"\n中文';
         output.value = '';
         setMessage('已载入示例。', 'success');
     });

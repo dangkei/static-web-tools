@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', () => run(button.dataset.sortMode));
     });
     document.getElementById('text-sort-sample-btn').addEventListener('click', () => {
-        input.value = 'banana\napple\n10\n2\nJavaPub\n工具箱';
+        input.value = 'banana\napple\n10\n2\nDevelopers\n工具箱';
         output.value = '';
         setMessage('已载入示例。', 'success');
     });

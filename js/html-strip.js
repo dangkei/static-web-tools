@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('strip-html-btn').addEventListener('click', () => run(stripHtml, 'HTML 已转为纯文本。'));
     document.getElementById('extract-links-btn').addEventListener('click', () => run(extractLinks, '链接提取完成。'));
     document.getElementById('html-strip-sample-btn').addEventListener('click', () => {
-        input.value = '<article><h1>JavaPub Tools</h1><p>开发者在线工具箱。</p><a href="https://rodert.github.io/jsonformat/">访问首页</a></article>';
+        input.value = '<article><h1>Developers Tools</h1><p>开发者在线工具箱。</p><a href="https://rodert.github.io/jsonformat/">访问首页</a></article>';
         output.value = '';
         setMessage('已载入示例。', 'success');
     });
